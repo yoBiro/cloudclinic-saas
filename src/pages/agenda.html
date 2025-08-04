@@ -26,7 +26,7 @@
         <aside id="sidebar">
             <nav>
                 <ul>
-                    <li><a href="/dashboard.html">Dashboard</a></li>
+                    <li><a href="./dashboard.html">Dashboard</a></li>
                     <li><a href="./agenda.html" class="active">Agenda</a></li>
                     <li><a href="/prontuario.html">Prontuário</a></li>
                     <li><a href="/atendimento.html">Atendimento</a></li>
@@ -40,7 +40,157 @@
             </nav>
         </aside>
         <section id="main-content">
-            
+            <h3 class="main-title">Calendário</h3>
+            <p class="main-date">Agosto, 2025</p>
+            <div class="left-items">
+                <div class="calendar">
+                    <h3 class="calendar-month">agosto</h3>
+                    <div class="calendar-header">
+                        <span style="color: #4ebeff;">Dom</span>
+                        <span>Seg</span>
+                        <span>Ter</span>
+                        <span>Qua</span>
+                        <span>Qui</span>
+                        <span>Sex</span>
+                        <span style="color: #4ebeff;">Sab</span>
+                    </div>
+                    <div class="calendar-body">
+                        <div style="color: #4ebeff;" class="calendar-day">1</div>
+                        <div class="calendar-day">2</div>
+                        <div class="calendar-day">3</div>
+                        <div class="calendar-day">4</div>
+                        <div class="calendar-day">5</div>
+                        <div class="calendar-day">6</div>
+                        <div style="color: #4ebeff;" class="calendar-day">7</div>
+                        <div style="color: #4ebeff;" class="calendar-day">8</div>
+                        <div class="calendar-day">9</div>
+                        <div class="calendar-day">10</div>
+                        <div class="calendar-day">11</div>
+                        <div class="calendar-day">12</div>
+                        <div class="calendar-day">13</div>
+                        <div style="color: #4ebeff;" class="calendar-day">14</div>
+                        <div style="color: #4ebeff;" class="calendar-day">15</div>
+                        <div class="calendar-day">16</div>
+                        <div class="calendar-day">17</div>
+                        <div class="calendar-day">18</div>
+                        <div class="calendar-day">19</div>
+                        <div class="calendar-day">20</div>
+                        <div style="color: #4ebeff;" class="calendar-day">21</div>
+                        <div style="color: #4ebeff;" class="calendar-day">22</div>
+                        <div class="calendar-day">23</div>
+                        <div class="calendar-day">24</div>
+                        <div class="calendar-day">25</div>
+                        <div class="calendar-day">26</div>
+                        <div class="calendar-day">27</div>
+                        <div style="color: #4ebeff;" class="calendar-day">28</div>
+                        <div style="color: #4ebeff;" class="calendar-day">29</div>
+                        <div class="calendar-day">30</div>
+                        <div class="calendar-day">31</div>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <input id="search-bar" type="text" placeholder="Pesquisar...">
+                </div>
+                <div class="card-category">
+                    <h3>Categorias</h3>
+                        <div class="category-list">
+                            <div class="category-item">
+                                <span class="category-color" style="background-color: #f87e2c;"></span>
+                                <span>Almoço/Descanso</span>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-color" style="background-color: #6ee984;"></span>
+                                <span>Reunião</span>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-color" style="background-color: #2daaf3;"></span>
+                                <span>Consultas/Exames</span>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-color" style="background-color: #5e5e5e;"></span>
+                                <span>Outros</span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="center-items">
+                <button class="event-button">
+                    <img src="../assets/icons/event.png" alt="Event Icon" id="event-icon">
+                    Novo Evento
+                </button>
+                <input id="month-filter" list="options" name="Mês" placeholder="Mês">
+                <datalist id="options">
+                    <option value="Janeiro"></option>
+                    <option value="Fevereiro"></option>
+                    <option value="Março"></option>
+                    <option value="Abril"></option>
+                    <option value="Maio"></option>
+                    <option value="Junho"></option>
+                    <option value="Julho"></option>
+                    <option value="Agosto"></option>
+                    <option value="Setembro"></option>
+                    <option value="Outubro"></option>
+                    <option value="Novembro"></option>
+                    <option value="Dezembro"></option>
+                </datalist>
+                <input id="week-filter" list="options-weeks" name="Semana" placeholder="Semana">
+                <datalist id="options-weeks">
+                    <option value="Semana Atual"></option>
+                    <option value="1 Semana à Frente"></option>
+                    <option value="2 Semanas à Frente"></option>
+                    <option value="3 Semanas à Frente"></option>
+                    <option value="4 Semanas à Frente"></option>
+                </datalist>
+                <div class="event-list">
+                    <div class="event-header">
+                        <h3>Ago 20, 2025</h3>
+                    </div>
+                    <div class="event-items"> 
+                        <div class="event-card">
+                            <h3 class="event-title">horário de almoço.</h3>
+                            <hr class="event-separator">
+                            <p>14:00 - 15:00</p>
+                            <p class="time-duration">1 hora.</p>
+                        </div>       
+                    </div>
+                    <div class="event-items"> 
+                        <div class="event-card">
+                            <h3 class="event-title">consulta com Meneghetti.</h3>
+                            <hr class="event-separator">
+                            <p class="event-description">consulta de retorno para avaliação dos exames.</p>
+                            <p>15:00 - 16:00</p>
+                            <p class="time-duration">1 hora.</p>
+                        </div>       
+                    </div>
+                </div>
+            </div>
+            <div class="right-items">
+                <div class="event-hour-country">
+                    <p>Brasília, Brazil (GMT, 3:00)</p>
+                </div>
+                <button class="impression-button">
+                    <img src="../assets/icons/print.png" alt="Print Icon" id="print-icon">
+                    Imprimir Agenda
+                </button>
+                <button class="backup-button">
+                    <img src="../assets/icons/backup.png" alt="Backup Icon" id="backup-icon">
+                    Fazer Backup
+                </button>
+                <div class="card-event">
+                    <div class="card-content">
+                        <h3 class="card-title">Horário de Almoço</h3>
+                        <span class="card-time">1 hora</span>
+                        <p class="card-hour">
+                            <img src="../assets/icons/clock.png" alt="Clock Icon" class="clock-icon">
+                            14:00 - 15:00</p>
+                        <p class="card-date">
+                            <img src="../assets/icons/calendar.png" alt="Calendar Icon" class="calendar-icon">
+                            Qua, Ago 20, 2025</p>
+                        <button class="rematch-button">Remarcar</button>
+                        <button class="info-button">Ver Info</button>
+                    </div>
+                </div>
+            </div>
         </section>
 </body>
 </html>
