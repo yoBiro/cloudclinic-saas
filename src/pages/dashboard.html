@@ -10,14 +10,14 @@
 <body>
     <header id="header-general">
         <div id="header-container">
-            <img src="#" alt="#">
+            <img src="../assets/images/LogoCloud.png" alt="LogoCloud" id="header-logo">
             <div id="header-pages">
                 <a href="/relatorios.html" id="header-link">Relatórios</a>
                 <a href="/suporte.html" id="header-link">Suporte</a>
             </div>
             <div id="header-user">
-                <img src="#" alt="User Avatar" id="user-avatar">
-                <span id="user-name">Usuário</span>
+                <img src="../assets/images/biroAdm.png" alt="User Avatar" id="user-avatar">
+                <span id="user-name">Gabriel S.</span>
                 <span id="user-id">#000001</span>
             </div>
         </div> 
@@ -27,7 +27,7 @@
             <nav>
                 <ul>
                     <li><a href="/dashboard.html" class="active">Dashboard</a></li>
-                    <li><a href="/agenda.html">Agenda</a></li>
+                    <li><a href="./agenda.html">Agenda</a></li>
                     <li><a href="/prontuario.html">Prontuário</a></li>
                     <li><a href="/atendimento.html">Atendimento</a></li>
                     <li><a href="/prontuario.html">Engajamento</a></li>
@@ -47,33 +47,48 @@
             <div class="search-bar">
                 <input id="search-bar" type="text" placeholder="Pesquisar...">
             </div>
-            <button class="backup-button">Fazer Backup</button>
-            <div class="card-marge">
-                <div class="card-bar"></div>
-                <h3>Mural de Avisos</h3>
-                <input type="text" placeholder="Digite uma mensagem...">
-                <input type="text" placeholder="Digite uma mensagem...">
-                <input type="text" placeholder="Digite uma mensagem...">
-                <input type="text" placeholder="Digite uma mensagem...">
+
+                <button class="backup-button">
+                    <img src="../assets/icons/backup.png" alt="BackupIcon" id="backup-icon">
+                    Fazer Backup
+                </button>
+            <div class="cards-top">
+                <div class="card-marge">
+                    <div class="card-bar"></div>
+                    <h3>Mural de Avisos</h3>
+                    <input type="text" placeholder="Digite uma mensagem...">
+                    <input type="text" placeholder="Digite uma mensagem...">
+                    <input type="text" placeholder="Digite uma mensagem...">
+                    <input type="text" placeholder="Digite uma mensagem...">
+                </div>
+                <div class="card-notif">
+                    <h3>Notificações</h3>
+                    <ul>
+                        <li>Você tem uma consulta agendada para amanhã.</li>
+                        <li>Seu backup foi realizado com sucesso.</li>
+                        <li>Atualização disponível para o sistema.</li>
+                        <li>Lembrete: Reunião com a equipe às 15:00.</li>
+                    </ul>
+                </div>
             </div>
             <div id="dashboard-cards">
                 <div class="card-medium">
                     <div class="icon-first">
-                        <img src="#" alt="Icon">
+                        <img src="../assets/icons/clock.png" alt="IconClock" id="icon-clock">
                     </div>
                     <p>10</p>
                     <h3>Consultas Agendadas</h3>
                 </div>
                 <div class="card-medium">
                     <div class="icon-second">
-                        <img src="#" alt="Icon">
+                        <img src="../assets/icons/check.png" alt="IconCheck" id="icon-check">
                     </div>
                     <p>08</p>
                     <h3>Consultas Realizadas</h3>
                 </div>
                 <div class="card-medium">
                     <div class="icon-third">
-                        <img src="#" alt="Icon">
+                        <img src="../assets/icons/cancel.png" alt="IconCancel" id="icon-cancel">
                     </div>
                     <p>01</p>
                     <h3>Pacientes Faltantes</h3>
@@ -94,17 +109,35 @@
                             <div class="calendar-day">23</div>
                         </div>
                     </div>
+                    <hr class="calendar-divider">
+                    <div class="calendar-footer">
+                        <span class="calendar-date">Agosto 20</span>
+                        <div class="info-consult">
+                            <span class="consult-hour">14:00</span>
+                            <div class="consult-patient-color"></div>
+                            <span class="consult-patient">Horário de Almoço.</span>
+                        </div>
+                        <div class="info-consult">
+                            <span class="consult-hour">15:00</span>
+                            <div class="consult-patient-color2"></div>
+                            <span class="consult-patient">Consulta com João Meneghetti.</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="card-small">
                     <p>R$ 0.000,00</p>
+                    <div class="animation-bar1"></div>
                     <h3>Despesas do Mês</h3>
                     <p>R$ 0.000,00</p>
+                    <div class="animation-bar1"></div>
                     <h3>Previsão de Despesas do Mês</h3>
                 </div>
                 <div class="card-small">
                     <p>R$ 0.000,00</p>
+                    <div class="animation-bar2"></div>
                     <h3>Lucro Mensal</h3>
                     <p>R$ 0.000,00</p>
+                    <div class="animation-bar2"></div>
                     <h3>Previsão de Lucro do Mês</h3>
                 </div>
         </section>

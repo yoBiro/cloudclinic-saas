@@ -18,6 +18,45 @@ header {
   font-family: 'Poppins', sans-serif;
 }
 
+
+#header-logo {
+  width: 150px;
+  height: auto;
+}
+
+#header-user {
+  background-color: #ffffff;
+  filter: drop-shadow(0 4px 15px rgba(39, 39, 39, 0.25));
+  border-radius: 16px;
+  display: flex;
+  padding: 20px;
+  width: 200px;
+  height: 70px;
+}
+
+#user-name {
+  font-size: 16px;
+  color: #272727;
+  margin-left: 10px;
+  padding-right: 5px;
+}
+
+#user-id {
+  font-size: 14px;
+  color: #a3a3a3;
+}
+
+#header-user span {
+  font-size: 14px;
+  color: #272727;
+}
+
+#user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
 #header-container {
   width: 100%;
   height: 60px;
@@ -59,7 +98,7 @@ header {
   padding: 0;
 }
 
-#sidebar li:first-child {
+#sidebar li:nth-child(1) {
   background-color: #272727;
   color: white;
   padding: 10px 20px;
@@ -141,6 +180,9 @@ header {
 }
 
 .backup-button {
+  display: flex;
+  align-items: end;
+  justify-content: end;
   background-color: #fdfdfd;
   color: #272727;
   border: none;
@@ -149,6 +191,58 @@ header {
   cursor: pointer;
   margin-bottom: 20px;
   filter: drop-shadow(0 4px 15px rgba(39, 39, 39, 0.25));
+  transition: 700ms;
+}
+
+#backup-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.backup-button:hover {
+  background-color: #e0e0e0;
+}
+
+.cards-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-notif {
+  background-color: #ffffff;
+  filter: drop-shadow(0 4px 15px rgba(39, 39, 39, 0.25));
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  height: 200px;
+  width: 455px;
+}
+
+.card-notif h3 {
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.card-notif li {
+  font-size: 16px;
+  color: #a3a3a3;
+}
+
+.card-notif ul {
+  list-style: circle;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.card-notif li:hover {
+  color: #272727;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
 }
 
 .card-marge {
@@ -229,18 +323,18 @@ header {
   display: flex;
   flex-direction: column;
   border-radius: 16px;
-  height: 200px;
+  height: 300px;
 }
 
 .card-small h3 {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 400;
   margin-bottom: 10px;
   color: #a3a3a3;
 }
 
 .card-small p {
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 500;
   margin-bottom: 10px;
   color: #272727;
@@ -253,7 +347,7 @@ header {
   display: flex;
   flex-direction: column;
   border-radius: 16px;
-  height: 200px;
+  height: 300px;
 }
 
 .card-large-header {
@@ -285,6 +379,15 @@ header {
 
 .calendar-day {
   font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.calendar-divider {
+  height: 2px;
+  background-color: #888888;
+  margin-top: 10px;
 }
 
 .calendar-day:hover {
@@ -293,4 +396,86 @@ header {
   border-radius: 8px;
   padding: 10px;
   transition: 650ms ease-in-out;
+}
+
+.info-consult {
+  font-size: 14px;
+  display: flex;
+  color: #a3a3a3;
+}
+
+.consult-patient-color {
+  background-color: #f37623;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.consult-patient-color2 {
+  background-color: #23c2f3;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.consult-hour {
+  padding-right: 10px;
+}
+
+.consult-patient {
+  padding-left: 10px;
+}
+
+.calendar-date {
+  font-size: 15px;
+  color: #a3a3a3;
+  margin-bottom: 10px;
+}
+
+.animation-bar1 {
+  width: 100%;
+  height: 5px;
+  background-color: #eb7e7e;
+  border-radius: 16px;
+  animation: loadingBar1 2s infinite;
+}
+@keyframes loadingBar1 {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.animation-bar2 {
+  width: 100%;
+  height: 5px;
+  background-color: #7eebb5;
+  border-radius: 16px;
+  animation: loadingBar2 2s infinite;
+}
+@keyframes loadingBar2 {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
 }
