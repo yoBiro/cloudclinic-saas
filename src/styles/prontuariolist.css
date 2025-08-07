@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Font face for Euclid Circular A */
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('https://fonts.cdnfonts.com/css/euclid-circular-a') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+#header-logo {
+  width: 150px;
+  height: auto;
+}
+
+#header-user {
+  background-color: #ffffff;
+  filter: drop-shadow(0 4px 15px rgba(39, 39, 39, 0.25));
+  border-radius: 16px;
+  display: flex;
+  padding: 20px;
+  width: 200px;
+  height: 70px;
+}
+
+#user-name {
+  font-size: 16px;
+  color: #272727;
+  margin-left: 10px;
+  padding-right: 5px;
+}
+
+#user-id {
+  font-size: 14px;
+  color: #a3a3a3;
+}
+
+#header-user span {
+  font-size: 14px;
+  color: #272727;
+}
+
+#user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#header-container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#header-general {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#header-pages a {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  font-size: 18px;
+  left: -60%;
+  padding-right: 40px;
+}
+
+#dashboard-container {
+  display: flex;
+  height: calc(100vh - 100px);
+  font-family: 'Euclid Circular A', sans-serif;
+}
+
+#sidebar {
+  width: 220px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+#sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sidebar li:nth-child(3) {
+  background-color: #272727;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 32px;
+  font-weight: 600;
+  transition: 700ms ease-in-out;
+}
+
+#sidebar li:hover {
+  background-color: rgba(39, 39, 39, 0.1);
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 32px;
+  font-weight: 600;
+  transition: 700ms ease-in-out;
+}
+
+#sidebar nav ul li {
+  margin: 15px 0;
+}
+
+#logout-button {
+  background-color: #272727;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 32px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+#logout-button:hover {
+  background-color: #1e1e1e;
+}
+
+.divider {
+  width: 2px;
+  background-color: #1e1e1e;
+  margin: 0 8px;
+}
+
+#main-content {
+  flex: 1;
+  background-color: #f4f4f4;
+  border-radius: 16px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+#main-content h3 {
+  font-size: 36px;
+  color: #272727;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 32px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(39, 39, 39, 0.1);
+}
+
+.prontuario-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(39, 39, 39, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  transition: 600ms;
+}
+
+.prontuario-info {
+  flex: 1;
+  padding-left: 30px;
+}
+
+#prontuario-avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(39, 39, 39, 0.1);
+    object-fit: cover;
+}
+
+.prontuario-info h4 {
+  font-size: 24px;
+  color: #272727;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.prontuario-details {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.prontuario-card:hover {
+    translate: 5px 5px;
+}
+
+.position-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.prontuario-button {
+  display: flex;
+  background-color: rgb(124, 207, 245);
+  padding: 20px;
+  color: white;
+  border-radius: 16px;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  gap: 10px;
+  transition: 300ms;
+}
+
+.prontuario-button:hover {
+  border: #c2d9fc 1px solid;
+  cursor: pointer;
+}

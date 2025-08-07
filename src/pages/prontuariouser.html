@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/prontuariouser.css">
+    <title>Pront. - João</title>
+</head>
+<body>
+    <header id="header-general">
+        <div id="header-container">
+            <img src="../assets/images/LogoCloud.png" alt="LogoCloud" id="header-logo">
+            <div id="header-pages">
+                <a href="/relatorios.html" id="header-link">Relatórios</a>
+                <a href="/suporte.html" id="header-link">Suporte</a>
+            </div>
+            <div id="header-user">
+                <img src="../assets/images/biroAdm.png" alt="User Avatar" id="user-avatar">
+                <span id="user-name">Gabriel S.</span>
+                <span id="user-id">#000001</span>
+            </div>
+        </div> 
+    </header>
+    <div id="dashboard-container">
+        <aside id="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="./dashboard.html">Dashboard</a></li>
+                    <li><a href="./agenda.html" class="active">Agenda</a></li>
+                    <li><a href="./prontuariolist.html">Prontuário</a></li>
+                    <li><a href="/atendimento.html">Atendimento</a></li>
+                    <li><a href="/prontuario.html">Engajamento</a></li>
+                    <li><a href="/convenios.html">Convênios</a></li>
+                    <li><a href="/financeiro.html">Financeiro</a></li>
+                    <li><a href="/gestao.html">Gestão</a></li>
+
+                    <button id="logout-button">Sair</button>
+                </ul>
+            </nav>
+        </aside>
+        <section id="main-content">
+            <div class="main-card">
+                <div class="card-info">
+                    <h4>João Victor Teodósio Meneghetti</h4>
+                    <ul class="card-details">
+                        <li><b>Gênero:</b> Masculino | <b>Idade:</b> 16 Anos (2009)</li>
+                        <li><b>Convênio:</b> Unimed</li>
+                        <li><b>Código:</b> #001</li>
+                        <li><b>Email:</b> joaozinho@email.com</li>
+                        <li><b>Telefone:</b> +55 11 12345-6789</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="buttons-container">
+                <button class="backup-button">
+                    <img src="../assets/icons/backup.png" alt="BackupIcon" id="backup-icon">
+                    Fazer Backup
+                </button>
+                <button class="export-button">
+                    <img src="../assets/icons/print.png" alt="ExportIcon" id="export-icon">
+                    Exportar Guia TISS
+                </button>
+                <button class="newconsult-button">
+                    <img src="../assets/icons/event.png" alt="NewConsultIcon" id="newconsult-icon">
+                    Nova Consulta
+                </button>
+            </div>
+            
+            </button>
+            <div class="convenio-card">
+                <h3>Convênio</h3>
+                <img src="../assets/icons/edit.png" alt="Edit Icon" id="open-modal" onclick="openModal()">
+                <ul class="convenio-details">
+                    <li><b>Convênio:</b> Unimed Paulistano</li>
+                    <li><b>N° da Carteirinha:</b> 1234567890</li>
+                    <li><b>Validade:</b> 10/2026</li>
+                    <li><b>Tipo:</b> Ambulatorial + Hospitalar</li>
+                    <li><b>Titular:</b> João Victor Teodósio Meneghetti</li>
+                    <li><b>Cobertura:</b> Consultas, Exames, Internação</li>
+                </ul>
+            </div>
+            <div class="prontuario-card">
+                <h3>Prontuário</h3>
+                <img src="../assets/icons/edit.png" alt="Edit Icon" id="modal" onclick="openModal()">
+                <ul class="prontuario-details">
+                    <li>Histórico Médico</li>
+                    <li>Queixa Principal</li>
+                    <li>História da Doença Atual</li>
+                    <li>Antecedentes Pessoais</li>
+                    <li>Médicações</li>
+                </ul>
+                <button class="prontuario-button" function="openModal()">
+                    Visualizar
+                </button>
+            </div>
+            <div class="timeline-card">
+                
+            </div>
+        </section>
+        <script src="../types/modals.js"></script>
+</body>
+</html>
