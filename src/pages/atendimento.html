@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="../global/global.css">
+    <link rel="stylesheet" href="../styles/atendimento.css">
+    <title>Atendimento</title>
+</head>
+<body>
+    <header id="header-general">
+        <div id="header-container">
+            <img src="../assets/images/LogoCloud.png" alt="LogoCloud" id="header-logo">
+            <div id="header-pages">
+                <a href="/relatorios.html" id="header-link">Relatórios</a>
+                <a href="/suporte.html" id="header-link">Suporte</a>
+            </div>
+            <div id="header-user">
+                <img src="../assets/images/biroAdm.png" alt="User Avatar" id="user-avatar">
+                <span id="user-name">Gabriel S.</span>
+                <span id="user-id">#000001</span>
+            </div>
+        </div> 
+    </header>
+    <div id="dashboard-container">
+        <aside id="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="./dashboard.html">Dashboard</a></li>
+                    <li><a href="./agenda.html" class="active">Agenda</a></li>
+                    <li><a href="./prontuariolist.html">Prontuário</a></li>
+                    <li><a href="./atendimento.html">Atendimento</a></li>
+                    <li><a href="./engajamento.html">Engajamento</a></li>
+                    <li><a href="./convenios.html">Convênios</a></li>
+                    <li><a href="./financeiro.html">Financeiro</a></li>
+                    <li><a href="./gestao.html">Gestão</a></li>
+
+                    <button id="logout-button">Sair</button>
+                </ul>
+            </nav>
+        </aside>
+        <section id="main-content" class="atendimento-container">
+            <div class="conteudo-grid">
+                <div class="coluna-esquerda">
+                <div class="card consulta-duracao">
+                    <div class="card-header">
+                    <span class="card-title">Duração da Consulta</span>
+                    <button class="card-icon-btn">
+                    </button>
+                    </div>
+                    <div class="timer">00:00:00</div>
+                    <div class="btn-container">
+                        <button class="btn-play">
+                            <img src="../assets/icons/play.png" id="play-icon">
+                        </button>
+                        <button class="btn-finalizar">
+                            Finalizar Atendimento
+                        </button>
+                    </div>
+                </div>
+                <div class="card atendimento-atual">
+                    <div class="card-header">
+                    <span class="card-title">Atendimento Atual</span>
+                    <span class="status-consulta">Consulta</span>
+                    </div>
+                    <div class="atual-info">
+                    <div class="atual-horario">
+                        <span>16:00 PM</span>
+                        <span>20/06/2024</span>
+                    </div>
+                    <div class="atual-detalhes">
+                        <div class="atual-consulta">
+                        <span class="atual-consulta-titulo">consulta com Meneghetti.</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                        <span class="atual-consulta-tempo">45min</span>
+                        </div>
+                        <div class="atual-paciente">
+                        <div class="paciente-nome">João Victor Teodósio Meneghetti</div>
+                        <div>Gênero: Masculino | Idade: 16 Anos (2009)</div>
+                        <div>Convênio: Unimed</div>
+                        <div>Código: #001</div>
+                        <div>Email: joaozinho@email.com</div>
+                        <div>Telefone: +55 11 12345-6789</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="coluna-direita">
+                <div class="actions-grid">
+                    <button class="action-btn">Info Atendimento</button>
+                    <button class="action-btn">Novo Atendimento</button>
+                    <button class="action-btn">Prescrever Medicação</button>
+                    <button class="action-btn">Editar Anamnese</button>
+                    <button class="action-btn">Anotações</button>
+                    <button class="action-btn">Anexar Arquivo</button>
+                </div>
+                <div class="card anamnese-card">
+                    <div class="anamnese-header">Anamnese</div>
+                    <div class="anamnese-conteudo">
+                    <div>
+                        <span class="anamnese-titulo">Queixa Principal:</span>
+                        <span>Paciente relata dor de garganta intensa há 3 dias, acompanhada de febre (38,5 °C), mal-estar e dificuldade para engolir alimentos sólidos.</span>
+                    </div>
+                    <hr>
+                    <div>
+                        <span class="anamnese-titulo">História da Doença Atual:</span>
+                        <span>Início súbito da dor. Febre presente desde o primeiro dia. Relato uso de dipirona para febre, sem melhora significativa. Nega tosse, coriza ou dor abdominal. Sem viagens recentes.</span>
+                    </div>
+                    <hr>
+                    <div>
+                        <span class="anamnese-titulo">Antecedentes Pessoais:</span>
+                        <ul>
+                        <li>Alergia: Nenhuma conhecida</li>
+                        <li>Comorbidades: Asma leve controlada</li>
+                        <li>Cirurgias: Amigdalectomia parcial em 2015</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+</body>
+</html>

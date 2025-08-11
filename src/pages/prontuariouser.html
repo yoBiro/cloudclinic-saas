@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/output.css">
-    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../global/global.css">
     <link rel="stylesheet" href="../styles/prontuariouser.css">
     <title>Pront. - João</title>
 </head>
@@ -30,11 +30,11 @@
                     <li><a href="./dashboard.html">Dashboard</a></li>
                     <li><a href="./agenda.html" class="active">Agenda</a></li>
                     <li><a href="./prontuariolist.html">Prontuário</a></li>
-                    <li><a href="/atendimento.html">Atendimento</a></li>
-                    <li><a href="/prontuario.html">Engajamento</a></li>
-                    <li><a href="/convenios.html">Convênios</a></li>
-                    <li><a href="/financeiro.html">Financeiro</a></li>
-                    <li><a href="/gestao.html">Gestão</a></li>
+                    <li><a href="./atendimento.html">Atendimento</a></li>
+                    <li><a href="./engajamento.html">Engajamento</a></li>
+                    <li><a href="./convenios.html">Convênios</a></li>
+                    <li><a href="./financeiro.html">Financeiro</a></li>
+                    <li><a href="./gestao.html">Gestão</a></li>
 
                     <button id="logout-button">Sair</button>
                 </ul>
@@ -42,6 +42,9 @@
         </aside>
         <section id="main-content">
             <div class="main-card">
+                <div class="prontuario-img">
+                        <img src="../assets/images/biroAdm.png" alt="Prontuário 1" id="prontuario-avatar">
+                    </div>
                 <div class="card-info">
                     <h4>João Victor Teodósio Meneghetti</h4>
                     <ul class="card-details">
@@ -69,34 +72,69 @@
             </div>
             
             </button>
-            <div class="convenio-card">
-                <h3>Convênio</h3>
-                <img src="../assets/icons/edit.png" alt="Edit Icon" id="open-modal" onclick="openModal()">
-                <ul class="convenio-details">
-                    <li><b>Convênio:</b> Unimed Paulistano</li>
-                    <li><b>N° da Carteirinha:</b> 1234567890</li>
-                    <li><b>Validade:</b> 10/2026</li>
-                    <li><b>Tipo:</b> Ambulatorial + Hospitalar</li>
-                    <li><b>Titular:</b> João Victor Teodósio Meneghetti</li>
-                    <li><b>Cobertura:</b> Consultas, Exames, Internação</li>
-                </ul>
-            </div>
-            <div class="prontuario-card">
-                <h3>Prontuário</h3>
-                <img src="../assets/icons/edit.png" alt="Edit Icon" id="modal" onclick="openModal()">
-                <ul class="prontuario-details">
-                    <li>Histórico Médico</li>
-                    <li>Queixa Principal</li>
-                    <li>História da Doença Atual</li>
-                    <li>Antecedentes Pessoais</li>
-                    <li>Médicações</li>
-                </ul>
-                <button class="prontuario-button" function="openModal()">
-                    Visualizar
-                </button>
-            </div>
-            <div class="timeline-card">
-                
+            <div class="cards-container">
+                <div class="convenio-card">
+                    <h3>Convênio</h3>
+                    <ul class="convenio-details">
+                        <li><b>Convênio:</b> Unimed Paulistano</li>
+                        <li><b>N° da Carteirinha:</b> 1234567890</li>
+                        <li><b>Validade:</b> 10/2026</li>
+                        <li><b>Tipo:</b> Ambulatorial + Hospitalar</li>
+                        <li><b>Titular:</b> João Victor Teodósio Meneghetti</li>
+                        <li><b>Cobertura:</b> Consultas, Exames, Internação</li>
+                    </ul>
+                    <div class="button-container">
+                        <img src="../assets/icons/edit.png" alt="Edit Icon" id="open-button" onclick="openModal()">
+                    </div>
+                </div>
+                <div class="prontuario-card">
+                    <h3>Prontuário</h3>
+                    <ul class="prontuario-details">
+                        <li>Histórico Médico</li>
+                        <li>Queixa Principal</li>
+                        <li>História da Doença Atual</li>
+                        <li>Antecedentes Pessoais</li>
+                        <li>Médicações</li>
+                    </ul>
+                    <button class="prontuario-button" function="openModal()">
+                        Visualizar
+                    </button>
+                </div>
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <h3>Linha do Tempo</h3>
+                    </div>
+                    <div class="timeline-container">
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                            <span class="timeline-date">15:00 - 20/06/2025</span>
+                            <h4>Consulta</h4>
+                            <p>Dor lombar – Prescrito relaxante muscular.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                            <span class="timeline-date">13:00 - 28/06/2025</span>
+                            <h4>Exame</h4>
+                            <p>Solicitado: Hemograma completo.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="pulsando"></div>
+                            <div class="timeline-content">
+                            <span class="timeline-date">15:00 - 20/07/2025</span>
+                            <h4>Consulta</h4>
+                            <p>Febre Intensa - Prescrito Ibuprofeno.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <script src="../types/modals.js"></script>

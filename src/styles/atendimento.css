@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Font face for Euclid Circular A */
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('https://fonts.cdnfonts.com/css/euclid-circular-a') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+#header-logo {
+  width: 150px;
+  height: auto;
+}
+
+#header-user {
+  background-color: #ffffff;
+  filter: drop-shadow(0 4px 15px rgba(39, 39, 39, 0.25));
+  border-radius: 16px;
+  display: flex;
+  padding: 20px;
+  width: 200px;
+  height: 70px;
+}
+
+#user-name {
+  font-size: 16px;
+  color: #272727;
+  margin-left: 10px;
+  padding-right: 5px;
+}
+
+#user-id {
+  font-size: 14px;
+  color: #a3a3a3;
+}
+
+#header-user span {
+  font-size: 14px;
+  color: #272727;
+}
+
+#user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#header-container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#header-general {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#header-pages a {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  font-size: 18px;
+  left: -60%;
+  padding-right: 40px;
+}
+
+#dashboard-container {
+  display: flex;
+  height: calc(100vh - 100px);
+  font-family: 'Euclid Circular A', sans-serif;
+}
+
+#sidebar {
+  width: 220px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+#sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sidebar li:nth-child(4) {
+  background-color: #272727;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 32px;
+  font-weight: 600;
+  transition: 700ms ease-in-out;
+}
+
+#sidebar li:hover {
+  background-color: rgba(39, 39, 39, 0.1);
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 32px;
+  font-weight: 600;
+  transition: 700ms ease-in-out;
+}
+
+#sidebar nav ul li {
+  margin: 15px 0;
+}
+
+#logout-button {
+  background-color: #272727;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 32px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+#logout-button:hover {
+  background-color: #1e1e1e;
+}
+
+.divider {
+  width: 2px;
+  background-color: #1e1e1e;
+  margin: 0 8px;
+}
+
+#main-content {
+  flex: 1;
+  background-color: #f4f4f4;
+  border-radius: 16px;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.atendimento-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: #f4f4f4;
+  min-height: 100vh;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.conteudo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.coluna-esquerda,
+.coluna-direita {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(39,39,39,0.10);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #272727;
+}
+
+.card-icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #a3a3a3;
+  cursor: pointer;
+}
+
+.timer {
+  font-family: 'Poppins', 'Euclid Circular A', monospace;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #272727;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.btn-play {
+  background: #272727;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+#play-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-finalizar {
+  background: #272727;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 80%;
+}
+
+.btn-container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-finalizar:hover {
+  background: #111;
+}
+
+.btn-play:hover {
+  background: #111;
+}
+
+.atendimento-atual .status-consulta {
+  background: #d1fae5;
+  color: #059669;
+  font-size: 0.85rem;
+  padding: 4px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-left: 12px;
+}
+
+.atual-info {
+  display: flex;
+  gap: 16px;
+}
+
+.atual-horario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #a3a3a3;
+  min-width: 70px;
+  margin-top: 8px;
+}
+
+.atual-detalhes {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.atual-consulta {
+  background: #38bdf8;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 16px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.atual-consulta-titulo {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.atual-consulta-tempo {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgba(0,0,0,0.10);
+  border-radius: 8px;
+  padding: 2px 8px;
+}
+
+.atual-paciente {
+  font-size: 0.97rem;
+  background-color: #272727;
+  color: #f4f4f4;
+  margin-top: 4px;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.paciente-nome {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.actions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.action-btn {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #272727;
+  box-shadow: 0 2px 8px rgba(39,39,39,0.07);
+  cursor: pointer;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+.action-btn:hover {
+  background: #f3f4f6;
+  box-shadow: 0 4px 16px rgba(39,39,39,0.13);
+}
+
+.anamnese-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.anamnese-header {
+  background: #272727;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 16px 24px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+.anamnese-conteudo {
+  padding: 20px 24px 24px 24px;
+  font-size: 1rem;
+  color: #272727;
+  background: #fff;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.anamnese-titulo {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.anamnese-conteudo ul {
+  margin: 8px 0 0 18px;
+  padding: 0;
+  font-size: 0.97rem;
+}
+
+.anamnese-conteudo li {
+  margin-bottom: 2px;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="../global/global.css">
+    <link rel="stylesheet" href="../styles/engajamento.css">
+    <title>Atendimento</title>
+</head>
+<body>
+    <header id="header-general">
+        <div id="header-container">
+            <img src="../assets/images/LogoCloud.png" alt="LogoCloud" id="header-logo">
+            <div id="header-pages">
+                <a href="/relatorios.html" id="header-link">Relatórios</a>
+                <a href="/suporte.html" id="header-link">Suporte</a>
+            </div>
+            <div id="header-user">
+                <img src="../assets/images/biroAdm.png" alt="User Avatar" id="user-avatar">
+                <span id="user-name">Gabriel S.</span>
+                <span id="user-id">#000001</span>
+            </div>
+        </div> 
+    </header>
+    <div id="dashboard-container">
+        <aside id="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="./dashboard.html">Dashboard</a></li>
+                    <li><a href="./agenda.html" class="active">Agenda</a></li>
+                    <li><a href="./prontuariolist.html">Prontuário</a></li>
+                    <li><a href="./atendimento.html">Atendimento</a></li>
+                    <li><a href="./engajamento.html">Engajamento</a></li>
+                    <li><a href="./convenios.html">Convênios</a></li>
+                    <li><a href="./financeiro.html">Financeiro</a></li>
+                    <li><a href="./gestao.html">Gestão</a></li>
+
+                    <button id="logout-button">Sair</button>
+                </ul>
+            </nav>
+        </aside>
+        <section id="main-content" class="engajamento-container">
+        <h3 class="titulo-engajamento">Engajamento</h3>
+        
+        <div class="barra-superior">
+            <input type="text" class="input-busca" placeholder="Pesquisar...">
+            <button class="btn-filtro-superior">Filtrar<span class="seta"></span></button>
+        </div>
+        
+        <div class="botoes-acoes">
+            <button class="btn-acao"><span>+</span> Novo Paciente</button>
+            <button class="btn-acao"><img src="../assets/icons/print.png" id="button-icon"> Imprimir Agenda</button>
+            <button class="btn-acao"><img src="../assets/icons/details.png" id="button-icon">Visualizar Detalhes</button>
+            <button class="btn-acao"><img src="../assets/icons/backup.png"> Fazer Backup</button>
+        </div>
+        
+        <div class="tabela-container">
+            <table class="tabela-engajamento">
+            <thead>
+                <tr>
+                <th></th>
+                <th><span>Nome Completo</span> <span class="icone-coluna">👤</span></th>
+                <th><span>Contato</span> <span class="icone-coluna">📞</span></th>
+                <th>Status</th>
+                <th><span>Médico</span> <span class="icone-coluna">🩺</span></th>
+                <th><span>Última Consulta</span> <span class="icone-coluna">ℹ️</span></th>
+                <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td><input type="checkbox"></td>
+                <td>Nome1</td>
+                <td>11 45676-2347</td>
+                <td><span class="badge-status ativo">Ativo</span></td>
+                <td>Dr. Biro</td>
+                <td></td>
+                <td>
+                    <button class="btn-tabela editar">Editar</button>
+                    <button class="btn-tabela deletar">Delete</button>
+                </td>
+                </tr>
+                <tr>
+                <td><input type="checkbox"></td>
+                <td>Nome2</td>
+                <td>11 76549-4543</td>
+                <td><span class="badge-status inativo">Inativo</span></td>
+                <td>Dr. Fulano1</td>
+                <td></td>
+                <td>
+                    <button class="btn-tabela editar">Editar</button>
+                    <button class="btn-tabela deletar">Delete</button>
+                </td>
+                </tr>
+                <tr>
+                <td><input type="checkbox"></td>
+                <td>Nome3</td>
+                <td>11 09678-6458</td>
+                <td><span class="badge-status inativo">Inativo</span></td>
+                <td>Dr. Fulano2</td>
+                <td></td>
+                <td>
+                    <button class="btn-tabela editar">Editar</button>
+                    <button class="btn-tabela deletar">Delete</button>
+                </td>
+                </tr>
+                <tr>
+                <td><input type="checkbox"></td>
+                <td>Nome4</td>
+                <td>11 34589-2345</td>
+                <td><span class="badge-status ativo">Ativo</span></td>
+                <td>Dra. Fulano3</td>
+                <td></td>
+                <td>
+                    <button class="btn-tabela editar">Editar</button>
+                    <button class="btn-tabela deletar">Delete</button>
+                </td>
+                </tr>
+                <tr>
+                <td><input type="checkbox"></td>
+                <td>João Victor...</td>
+                <td>11 12345-6789</td>
+                <td><span class="badge-status retorno">Retorno</span></td>
+                <td>Dr. Fulano1</td>
+                <td></td>
+                <td>
+                    <button class="btn-tabela editar">Editar</button>
+                    <button class="btn-tabela deletar">Delete</button>
+                </td>
+                </tr>
+                <tr>
+                <td><input type="checkbox"></td>
+                <td>Nome5</td>
+                <td>11 94765-2356</td>
+                <td><span class="badge-status inativo">Inativo</span></td>
+                <td>Dra. Fulano3</td>
+                <td></td>
+                <td>
+                    <button class="btn-tabela editar">Editar</button>
+                    <button class="btn-tabela deletar">Delete</button>
+                </td>
+                </tr>
+                <tr>
+                <td><input type="checkbox"></td>
+                <td>Nome6</td>
+                <td>11 23873-9754</td>
+                <td><span class="badge-status ativo">Ativo</span></td>
+                <td>Dr. Biro</td>
+                <td></td>
+                <td>
+                    <button class="btn-tabela editar">Editar</button>
+                    <button class="btn-tabela deletar">Delete</button>
+                </td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        
+        <div class="paginacao-container">
+            <span>Colunas por Página <select><option>7</option></select></span>
+            <span>1-7 de 20 Colunas</span>
+            <div class="paginacao">
+            <button>&lt;</button>
+            <button class="ativo">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>&gt;</button>
+            </div>
+        </div>
+        </section>
