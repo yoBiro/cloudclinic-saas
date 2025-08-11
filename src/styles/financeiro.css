@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Font face for Euclid Circular A */
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('https://fonts.cdnfonts.com/css/euclid-circular-a') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+#header-logo {
+  width: 150px;
+  height: auto;
+}
+
+#header-user {
+  background-color: #ffffff;
+  filter: drop-shadow(0 4px 15px rgba(39, 39, 39, 0.25));
+  border-radius: 16px;
+  display: flex;
+  padding: 20px;
+  width: 200px;
+  height: 70px;
+}
+
+#user-name {
+  font-size: 16px;
+  color: #272727;
+  margin-left: 10px;
+  padding-right: 5px;
+}
+
+#user-id {
+  font-size: 14px;
+  color: #a3a3a3;
+}
+
+#header-user span {
+  font-size: 14px;
+  color: #272727;
+}
+
+#user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#header-container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#header-general {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#header-pages a {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  font-size: 18px;
+  left: -60%;
+  padding-right: 40px;
+}
+
+#dashboard-container {
+  display: flex;
+  height: calc(100vh - 100px);
+  font-family: 'Euclid Circular A', sans-serif;
+}
+
+#logout-button {
+  background-color: #272727;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 32px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+#logout-button:hover {
+  background-color: #1e1e1e;
+}
+
+.divider {
+  width: 2px;
+  background-color: #1e1e1e;
+  margin: 0 8px;
+}
+
+#main-content {
+  flex: 1;
+  background-color: #f4f4f4;
+  border-radius: 16px;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#sidebar {
+  width: 220px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+#sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sidebar li:nth-child(7) {
+  background-color: #272727;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 32px;
+  font-weight: 600;
+  transition: 700ms ease-in-out;
+}
+
+#sidebar li:hover {
+  background-color: rgba(39, 39, 39, 0.1);
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 32px;
+  font-weight: 600;
+  transition: 700ms ease-in-out;
+}
+
+#sidebar nav ul li {
+  margin: 15px 0;
+}
+
+#logout-button {
+  background-color: #272727;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 32px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+#logout-button:hover {
+  background-color: #1e1e1e;
+}
+
+.titulo-financeiro {
+  padding-right: 20px;
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #272727;
+  margin-bottom: 0;
+}
+
+.financeiro-barra-superior {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 18px;
+}
+
+.input-busca {
+  padding: 10px 16px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 16px;
+  font-size: 1rem;
+  background: #fff;
+  outline: none;
+  width: 220px;
+}
+
+.financeiro-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 24px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(39,39,39,0.10);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-lucros {
+    width: 30%;
+}
+
+.card-header {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 16px 24px 8px 24px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.card-header-lucro {
+  background: #272727;
+  color: #fff;
+}
+
+.card-header-despesa {
+  background: #272727;
+  color: #fff;
+}
+
+.card-header-dados {
+  background: #272727;
+  color: #fff;
+}
+
+.card-content {
+  padding: 16px 24px 24px 24px;
+  font-size: 1rem;
+  color: #272727;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-despesas {
+    width: 100%;
+}
+
+.card-lucros, .card-despesas {
+  grid-column: span 1;
+  min-width: 260px;
+}
+
+.card-dados {
+  grid-column: span 1;
+  width: 60%;
+}
+
+.grafico-placeholder {
+  background: #f4f4f4;
+  border-radius: 12px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a3a3a3;
+  font-size: 1.1rem;
+}
+
+.grafico-placeholder img {
+    margin-top: 80px;
+}
+
+.indicador-container {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+.card-indicador {
+  width: 220px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 0 0;
+  box-shadow: 0 4px 16px rgba(39,39,39,0.10);
+}
+
+.card-indicador-lucro, .card-indicador-previsao {
+  background: #fff;
+}
+
+.card-indicador-despesa, .card-indicador-despesa-esp {
+  background: #fff;
+}
+
+.indicador-valor {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 18px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.indicador-valor.positivo {
+  color: #059669;
+}
+
+.indicador-valor.negativo {
+  color: #ef4444;
+}
+
+.indicador-label {
+  font-size: 1rem;
+  color: #272727;
+  text-align: center;
+  margin-bottom: 18px;
+}

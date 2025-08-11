@@ -128,7 +128,7 @@ header {
   padding: 0;
 }
 
-#sidebar li:nth-child(5) {
+#sidebar li:nth-child(6) {
   background-color: #272727;
   color: white;
   padding: 10px 20px;
@@ -164,16 +164,9 @@ header {
   background-color: #1e1e1e;
 }
 
-.engajamento-container {
-  background: #f4f4f4;
-  min-height: 100vh;
-  padding: 32px;
-  border-radius: 16px;
-  font-family: 'Poppins', 'Euclid Circular A', Arial, sans-serif;
-}
-
-.titulo-engajamento {
+.titulo-convenios {
   font-size: 2.3rem;
+  padding-right: 20px;
   font-weight: 600;
   margin-bottom: 24px;
   color: #272727;
@@ -182,38 +175,23 @@ header {
 .barra-superior {
   display: flex;
   align-items: center;
-  padding-left: 16px;
   gap: 16px;
   margin-bottom: 16px;
 }
 
 .input-busca {
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 32px;
-  padding: 10px 20px;
-  box-shadow: 0 4px 15px rgba(39, 39, 39, 0.1);
-}
-
-.btn-filtro-superior {
-  background: #fff;
+  flex: 1;
+  padding: 10px 16px;
   border: 1.5px solid #d1d5db;
-  border-radius: 12px;
-  padding: 10px 24px;
+  border-radius: 16px;
   font-size: 1rem;
-  font-weight: 500;
-  color: #272727;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(39,39,39,0.07);
-  transition: background 0.15s;
-}
-.btn-filtro-superior:hover {
-  background: #f3f4f6;
+  background: #fff;
+  outline: none;
 }
 
 .botoes-acoes {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   margin-bottom: 16px;
 }
@@ -222,7 +200,7 @@ header {
   background: #fff;
   border: 1.5px solid #e5e7eb;
   border-radius: 12px;
-  padding: 20px;
+  padding: 16px;
   font-size: 1rem;
   font-weight: 500;
   color: #272727;
@@ -239,30 +217,20 @@ header {
   box-shadow: 0 4px 16px rgba(39,39,39,0.13);
 }
 .btn-filtrar {
-  grid-column: 3/4;
+  grid-column: 4/5;
 }
-
-.status {
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 2px 12px;
-  border-radius: 8px;
-}
-.status.ativo { color: #059669; }
-.status.retorno { color: #eab308; }
-.status.inativo { color: #ef4444; }
 
 .tabela-container {
+  width: 100%;
   margin-top: 24px;
   background: #fff;
   border-radius: 18px;
   box-shadow: 0 4px 16px rgba(39,39,39,0.10);
   padding: 0;
   overflow-x: auto;
-  width: 100%;
 }
 
-.tabela-engajamento {
+.tabela-convenios {
   width: 100%;
   border-collapse: collapse;
   font-size: 1rem;
@@ -271,20 +239,20 @@ header {
   overflow: hidden;
 }
 
-.tabela-engajamento th,
-.tabela-engajamento td {
+.tabela-convenios th,
+.tabela-convenios td {
   padding: 14px 12px;
   text-align: left;
   border-bottom: 1.5px solid #e5e7eb;
 }
 
-.tabela-engajamento th {
+.tabela-convenios th {
   background: #f4f4f4;
   font-weight: 600;
   color: #272727;
 }
 
-.tabela-engajamento tr:last-child td {
+.tabela-convenios tr:last-child td {
   border-bottom: none;
 }
 
@@ -296,9 +264,9 @@ header {
   font-weight: 600;
   color: #fff;
 }
-.badge-status.ativo { background: #0cce63; color: #fafafa;}
-.badge-status.inativo { background: #ce1212; color: #fafafa;}
-.badge-status.retorno { background: #ddb333; color: #fafafa; }
+.badge-status.aprovado { background: #0cce63; color: #fafafa;}
+.badge-status.glosado { background: #ce1212; color: #fafafa;}
+.badge-status.analise { background: #ddb333; color: #fafafa; }
 
 .btn-tabela {
   border: none;
@@ -310,26 +278,19 @@ header {
   cursor: pointer;
   transition: background 0.15s;
 }
-.btn-tabela.editar {
-  background: #4d4d4d;
+.btn-tabela {
+  background: #585858;
   color: #fff;
 }
-.btn-tabela.deletar {
-  background: #4d4d4d;
-  color: #fff;
-}
-.btn-tabela.editar:hover {
-  background: #111;
-}
-.btn-tabela.deletar:hover {
-  background: #b91c1c;
+.btn-tabela:hover {
+  background: #383838;
 }
 
 .paginacao-container {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   margin-top: 18px;
   background: #fff;
   border-radius: 12px;

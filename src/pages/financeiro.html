@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="../global/global.css">
+    <link rel="stylesheet" href="../styles/financeiro.css">
+    <title>Financeiro</title>
+</head>
+<body>
+    <header id="header-general">
+        <div id="header-container">
+            <img src="../assets/images/LogoCloud.png" alt="LogoCloud" id="header-logo">
+            <div id="header-pages">
+                <a href="/relatorios.html" id="header-link">Relatórios</a>
+                <a href="/suporte.html" id="header-link">Suporte</a>
+            </div>
+            <div id="header-user">
+                <img src="../assets/images/biroAdm.png" alt="User Avatar" id="user-avatar">
+                <span id="user-name">Gabriel S.</span>
+                <span id="user-id">#000001</span>
+            </div>
+        </div> 
+    </header>
+    <div id="dashboard-container">
+        <aside id="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="./dashboard.html">Dashboard</a></li>
+                    <li><a href="./agenda.html" class="active">Agenda</a></li>
+                    <li><a href="./prontuariolist.html">Prontuário</a></li>
+                    <li><a href="./atendimento.html">Atendimento</a></li>
+                    <li><a href="./engajamento.html">Engajamento</a></li>
+                    <li><a href="./convenios.html">Convênios</a></li>
+                    <li><a href="./financeiro.html">Financeiro</a></li>
+                    <li><a href="./gestao.html">Gestão</a></li>
+
+                    <button id="logout-button">Sair</button>
+                </ul>
+            </nav>
+        </aside>
+    <section id="main-content">
+            <h2 class="titulo-financeiro">Financeiro</h2>
+            <div class="financeiro-barra-superior">
+                <input type="text" class="input-busca" placeholder="Buscar...">
+            </div>
+            <div class="financeiro-grid">
+                <div class="card card-lucros">
+                    <div class="card-header card-header-lucro">Lucros Mensais</div>
+                    <div class="card-content">
+                        <div><b>R$7486,78</b><br><span>Lucro de Atendimentos</span></div>
+                        <div><b>R$28.400</b><br><span>Salários Dos Funcionarios</span></div>
+                        <div><b>R$3.767</b><br><span>Equipamentos E Manutenção</span></div>
+                        <div><b>R$4.300</b><br><span>Insumos E Materiais</span></div>
+                        <div><b>R$5.975</b><br><span>Administrativas</span></div>
+                    </div>
+                </div>
+                <div class="card card-dados">
+                    <div class="card-header card-header-dados">Dados Financeiros</div>
+                    <div class="card-content">
+                        <div class="grafico-placeholder"><img src="../assets/images/graph.png"></div>
+                    </div>
+                </div>
+                <div class="indicador-container">
+                    <div class="card card-indicador card-indicador-lucro">
+                        <div class="indicador-valor positivo">+R$0,000</div>
+                        <div class="indicador-label">Lucro Do Mês</div>
+                    </div>
+                    <div class="card card-indicador card-indicador-previsao">
+                        <div class="indicador-valor positivo">+R$0,000</div>
+                        <div class="indicador-label">Previsão De Lucro</div>
+                    </div>
+                    <div class="card card-indicador card-indicador-despesa">
+                        <div class="indicador-valor negativo">-R$0,000</div>
+                        <div class="indicador-label">Total Das Despesas</div>
+                    </div>
+                    <div class="card card-indicador card-indicador-despesa-esp">
+                        <div class="indicador-valor negativo">-R$0.000</div>
+                        <div class="indicador-label">Despesas Esperadas</div>
+                    </div>
+                </div>
+                <div class="card card-despesas">
+                    <div class="card-header card-header-despesa">Despesas Mensais</div>
+                    <div class="card-content">
+                        <div><b>R$7486,78</b><br><span>Aluguel (Água, Energia, Internet, Segurança)</span></div>
+                        <div><b>R$28.400</b><br><span>Salários Dos Funcionarios</span></div>
+                        <div><b>R$3.767</b><br><span>Equipamentos E Manutenção</span></div>
+                        <div><b>R$4.300</b><br><span>Insumos E Materiais</span></div>
+                        <div><b>R$5.975</b><br><span>Administrativas</span></div>
+                        <div><b>R$567</b><br><span>Licenças E Registros</span></div>
+                        <div><b>R$2689,74</b><br><span>Marketing E Divulgação</span></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</body>
+</html>

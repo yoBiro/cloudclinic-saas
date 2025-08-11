@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="../global/global.css">
+    <link rel="stylesheet" href="../styles/convenios.css">
+    <title>Convênios</title>
+</head>
+<body>
+    <header id="header-general">
+        <div id="header-container">
+            <img src="../assets/images/LogoCloud.png" alt="LogoCloud" id="header-logo">
+            <div id="header-pages">
+                <a href="/relatorios.html" id="header-link">Relatórios</a>
+                <a href="/suporte.html" id="header-link">Suporte</a>
+            </div>
+            <div id="header-user">
+                <img src="../assets/images/biroAdm.png" alt="User Avatar" id="user-avatar">
+                <span id="user-name">Gabriel S.</span>
+                <span id="user-id">#000001</span>
+            </div>
+        </div> 
+    </header>
+    <div id="dashboard-container">
+        <aside id="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="./dashboard.html">Dashboard</a></li>
+                    <li><a href="./agenda.html" class="active">Agenda</a></li>
+                    <li><a href="./prontuariolist.html">Prontuário</a></li>
+                    <li><a href="./atendimento.html">Atendimento</a></li>
+                    <li><a href="./engajamento.html">Engajamento</a></li>
+                    <li><a href="./convenios.html">Convênios</a></li>
+                    <li><a href="./financeiro.html">Financeiro</a></li>
+                    <li><a href="./gestao.html">Gestão</a></li>
+
+                    <button id="logout-button">Sair</button>
+                </ul>
+            </nav>
+        </aside>
+        <section id="main-content">
+            <h3 class="titulo-convenios">Convênios</h3>
+            
+            <div class="barra-superior">
+                <input type="text" class="input-busca" placeholder="Pesquisar...">
+            </div>
+            
+            <div class="botoes-acoes">
+                <button class="btn-acao"><span>+</span> Novo Faturamento</button>
+                <button class="btn-acao"><img src="../assets/icons/paper.png" id="button-icon"> Gerar XML TISS</button>
+                <button class="btn-acao"><img src="../assets/icons/mark.png" id="button-icon">Convênios</button>
+                <button class="btn-acao btn-filtrar">Filtrar <span class="seta"></span></button>
+            </div>
+            
+            <div class="tabela-container">
+                <table class="tabela-convenios">
+                <thead>
+                    <tr>
+                    <th></th>
+                    <th>Nome</th>
+                    <th>Convênio</th>
+                    <th>Guia</th>
+                    <th>CID</th>
+                    <th>Status</th>
+                    <th>Data de Envio</th>
+                    <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Nome1</td>
+                    <td>Amil</td>
+                    <td>Consulta</td>
+                    <td>M54.5</td>
+                    <td><span class="badge-status aprovado">Aprovado</span></td>
+                    <td>15/07/2025</td>
+                    <td>
+                        <button class="btn-tabela">Editar</button>
+                        <button class="btn-tabela">Deletar</button>
+                        <button class="btn-tabela">XML</button>
+                        <button class="btn-tabela">Docs</button>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Nome2</td>
+                    <td>Amil</td>
+                    <td>Consulta</td>
+                    <td>F41.1</td>
+                    <td><span class="badge-status glosado">Glosado</span></td>
+                    <td>13/07/2025</td>
+                    <td>
+                        <button class="btn-tabela">Editar</button>
+                        <button class="btn-tabela">Deletar</button>
+                        <button class="btn-tabela">XML</button>
+                        <button class="btn-tabela">Docs</button>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Nome3</td>
+                    <td>Amil</td>
+                    <td>Internação</td>
+                    <td>J06.9</td>
+                    <td><span class="badge-status glosado">Glosado</span></td>
+                    <td>10/07/2025</td>
+                    <td>
+                        <button class="btn-tabela">Editar</button>
+                        <button class="btn-tabela">Deletar</button>
+                        <button class="btn-tabela">XML</button>
+                        <button class="btn-tabela">Docs</button>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Nome4</td>
+                    <td>Unimed</td>
+                    <td>SADT</td>
+                    <td>R51</td>
+                    <td><span class="badge-status aprovado">Aprovado</span></td>
+                    <td>14/07/2025</td>
+                    <td>
+                        <button class="btn-tabela">Editar</button>
+                        <button class="btn-tabela">Deletar</button>
+                        <button class="btn-tabela">XML</button>
+                        <button class="btn-tabela">Docs</button>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox"></td>
+                    <td>João Victor...</td>
+                    <td>Unimed</td>
+                    <td>Consulta</td>
+                    <td>K29.3</td>
+                    <td><span class="badge-status analise">Em Análise</span></td>
+                    <td>12/07/2025</td>
+                    <td>
+                        <button class="btn-tabela">Editar</button>
+                        <button class="btn-tabela">Deletar</button>
+                        <button class="btn-tabela">XML</button>
+                        <button class="btn-tabela">Docs</button>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Nome5</td>
+                    <td>SulAmérica</td>
+                    <td>SADT</td>
+                    <td>M79.1</td>
+                    <td><span class="badge-status glosado">Glosado</span></td>
+                    <td>09/07/2025</td>
+                    <td>
+                        <button class="btn-tabela">Editar</button>
+                        <button class="btn-tabela">Deletar</button>
+                        <button class="btn-tabela">XML</button>
+                        <button class="btn-tabela">Docs</button>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Nome6</td>
+                    <td>SulAmérica</td>
+                    <td>Internação</td>
+                    <td>E11.9</td>
+                    <td><span class="badge-status aprovado">Aprovado</span></td>
+                    <td>11/07/2025</td>
+                    <td>
+                        <button class="btn-tabela">Editar</button>
+                        <button class="btn-tabela deletar">Deletar</button>
+                        <button class="btn-tabela">XML</button>
+                        <button class="btn-tabela">Docs</button>
+                    </td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            
+            <div class="paginacao-container">
+                <span>Colunas por Página <select><option>7</option></select></span>
+                <span>1-7 de 20 Colunas</span>
+                <div class="paginacao">
+                <button>&lt;</button>
+                <button class="ativo">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>&gt;</button>
+                </div>
+            </div>
+        </section>
+</body>
+</html>
