@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('/fonts/EuclidCircularA-Regular.woff2') format('woff2'),
+         url('/fonts/EuclidCircularA-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+    font-family: 'Euclid Circular A', 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+#main-content {
+    display: flex;
+    max-height: 100%;
+}
+
+#welcome-banner {
+    background-color: #272727;
+    width: 50%;
+    height: 100%;
+}
