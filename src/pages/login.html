@@ -9,30 +9,38 @@
     <title>Login</title>
 </head>
 <body>
-   <main id="main-content">
-        <div id="welcome-banner">
-            <svg xmlns="http://www.w3.org/2000/svg" width="130" height="138" viewBox="0 0 220 228" fill="none" id="svg-effect">
-            <path d="M134.541 212.078C107.913 246.161 107.262 190.765 73.6113 164.475C39.9607 138.184 -11.0575 147.462 15.571 113.379C42.1995 79.2962 88.1759 76.4712 121.827 102.762C155.477 129.053 161.17 177.995 134.541 212.078Z" fill="#A7A8A8"/>
-            <ellipse cx="136.023" cy="83.7955" rx="83.2328" ry="83.7167" fill="#515151"/>
-            </svg>
-            <h1>Bem-vindo(a) de volta!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Explicabo laboriosam nulla ipsa.</p>
+    <div class="container">
+        <div class="left-panel">
+        <h1>Seja <br><span>Bem-Vindo(a)!</span></h1>
+        <p>Insira suas informações e<br>acesse o sistema.</p>
+        <div class="circle"></div>
         </div>
-        <div class="header-form">
-            <h1 class="header-title">Faça Login</h1>
-        </div>
-        <div class="forms-content">
-            <div class="inputs-content">
-                <input type="email" placeholder="Insira seu Email..." class="input input-email">
 
-                <input type="password" placeholder="Insira sua Senha..." class="input input-password">
+        <div class="login-box">
+        <h2>Entre na sua Conta</h2>
+        
+        <form>
+            <label for="email">E-MAIL</label>
+            <input type="email" id="email" placeholder="Insira seu E-Mail...">
+
+            <label for="senha">SENHA</label>
+            <input type="password" id="senha" placeholder="Insira sua Senha...">
+
+            <div class="select-box">
+            <select>
+                <option selected>FUNÇÃO</option>
+                <option>Administrador</option>
+                <option>Médico</option>
+                <option>Recepção</option>
+                <option>Financeiro</option>
+            </select>
             </div>
-            <div class="sub-content">
-                <select><option id="select-button">Função</option></select>
-                <a href=".">esqueci minha senha</a>
-            </div>
-            <button id="login-button">Entrar</button>
+
+            <a href="./checksenha.html" class="forgot">Esqueci Minha Senha</a>
+
+            <button type="submit"><a href="./oauth.html">Entrar</a></button>
+        </form>
         </div>
-   </main>
+    </div>
 </body>
 </html>

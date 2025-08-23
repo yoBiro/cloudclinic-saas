@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="../global/global.css">
+    <link rel="stylesheet" href="../styles/register.css">
+    <title>Registro</title>
+</head>
+<body>
+
+    <section class="form-section">
+        <div class="container">
+            <div class="left-panel">
+            <h1>Seja <br><span>Bem-Vindo(a)!</span></h1>
+            <p>Registre um novo usuário por aqui.</p>
+            <div class="circle"></div>
+            </div>
+
+            <div class="login-box">
+                
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="primeiroNome">PRIMEIRO NOME</label>
+                            <input type="text" id="primeiroNome" placeholder="Insira seu Nome...">
+                        </div>
+                        <div class="form-group">
+                            <label for="segundoNome">SEGUNDO NOME</label>
+                            <input type="text" id="segundoNome" placeholder="Insira seu Sobrenome...">
+                        </div>
+                    </div>
+
+                    <label for="email">E-MAIL</label>
+                    <input type="email" id="email" placeholder="Insira seu E-Mail...">
+
+                    <label for="senha">SENHA</label>
+                    <input type="password" id="senha" placeholder="Insira sua Senha...">
+
+                    <label for="senha">CONFIRMAR SENHA</label>
+                    <input type="password" id="confirmar-senha" placeholder="Insira sua Senha...">
+
+                    <div class="select-box">
+                    <select>
+                        <option selected>FUNÇÃO</option>
+                        <option>Administrador</option>
+                        <option>Médico</option>
+                        <option>Recepção</option>
+                        <option>Financeiro</option>
+                    </select>
+                    </div>
+
+                    <button type="submit"><a href="./dashboard.html">Entrar</a></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

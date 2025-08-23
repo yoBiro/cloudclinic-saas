@@ -1,0 +1,141 @@
+body {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Euclid Circular A', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 15px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.space-box {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.enter-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 700ms;
+}
+
+.enter-link:hover {
+    background: var(--Safer-Clinic-Gradient-1, linear-gradient(95deg, #1B6EC2 -6.9%, #1D60A7 47.53%, #F56500 82.59%));
+    font-weight: 600;
+    color: #f4f4f4;
+    padding: 10px 20px;
+    border-radius: 16px;
+    transition: 700ms;
+}
+
+.twofa-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+}
+
+.twofa-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  border: 1px solid #cfe9ff;
+}
+
+.twofa-box h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.twofa-box p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.code-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.code-inputs input {
+  width: 50px;
+  height: 65px;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  outline: none;
+  transition: border 0.3s;
+}
+
+.code-inputs input:focus {
+  border: 1px solid #31B5F8;
+}
+
+.twofa-actions {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.twofa-actions a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.twofa-actions a:hover {
+  color: #1E90FF;
+}
+
+.button-position {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.continue-button {
+  background: #31B5F8;
+  width: 80%;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.continue-button:hover {
+  background: #1a8dcf;
+}
+
+.continue-button a {
+  color: #fff;
+  text-decoration: none;
+}

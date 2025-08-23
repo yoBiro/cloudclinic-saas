@@ -1,29 +1,170 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-
-@font-face {
-  font-family: 'Euclid Circular A';
-  src: url('/fonts/EuclidCircularA-Regular.woff2') format('woff2'),
-         url('/fonts/EuclidCircularA-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 
 body {
-    font-family: 'Euclid Circular A', 'Poppins', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-y: hidden;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Euclid Circular A', sans-serif;
 }
 
-#main-content {
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 15px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.space-box {
     display: flex;
-    max-height: 100%;
+    justify-content: space-around;
+    padding: 10px;
 }
 
-#welcome-banner {
-    background-color: #272727;
-    width: 50%;
-    height: 100%;
+.enter-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 700ms;
+}
+
+.enter-link:hover {
+    background: var(--Safer-Clinic-Gradient-1, linear-gradient(95deg, #1B6EC2 -6.9%, #1D60A7 47.53%, #F56500 82.59%));
+    font-weight: 600;
+    color: #f4f4f4;
+    padding: 10px 20px;
+    border-radius: 16px;
+    transition: 700ms;
+}
+
+.container {
+  display: flex;
+  width: 900px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin-top: 50px;
+}
+
+.left-panel {
+  background: #1C1C1C;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  width: 40%;
+  padding: 40px 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-panel h1 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.left-panel h1 span {
+  font-weight: 700;
+}
+
+.left-panel p {
+  margin-top: 20px;
+  align-items: center;
+  font-size: 18px;
+  color: #dcdcdc;
+}
+
+.left-panel .circle {
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.login-box {
+  background: #fff;
+  width: 60%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-box h2 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, select {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #31B5F8;
+}
+
+.select-box {
+  position: relative;
+}
+
+select {
+  appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg fill="black" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 15px center;
+  background-size: 15px;
+  cursor: pointer;
+}
+
+.forgot {
+  font-size: 12px;
+  text-align: right;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(to right, #1E90FF, #FF4500);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
 }
